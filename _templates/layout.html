@@ -1,0 +1,22 @@
+{% extends "!layout.html" %}
+
+{% set customsidebar = 'quicklinks.html' %}
+
+
+{% block extrahead %}
+  <meta name="keywords" content="nipy, neuroimaging, python, neuroscience">
+{% endblock %}
+
+{% block header %}
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+ <a href="{{pathto('index') }}">
+  <img src="{{ pathto("_static/nipy-banner2.png", 1) }}" alt="NIPY logo" />
+</div>
+{% endblock %}
+
+
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
+
+{% block sidebar1 %}{{ sidebar() }}{% endblock %}
+{% block sidebar2 %}{% endblock %}

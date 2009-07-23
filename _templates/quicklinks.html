@@ -1,0 +1,27 @@
+{% block community %}
+<h3>Community</h3>
+
+<ul>
+<li><a href="http://projects.scipy.org/mailman/listinfo/nipy-devel">Mailing list</a></li>
+<li><a href="{{ pathto('sprints/sprints') }}"> Sprints</a></li>
+</ul>
+{% endblock %}
+
+{% block software %}
+<h3>Software</h3>
+
+<ul>
+<li><a href="{{ pathto('license/contents') }}"> License</a></li>
+</ul>
+{% endblock %}
+
+{% block quicklinks %}
+<h3>About</h3>
+
+<ul>
+<li><a href="{{ pathto('about/history') }}"> History</a></li>
+<li><a href="{{ pathto('about/publications/contents') }}"> Publications</a></li>
+<li><a href="{{ pathto('about/funding') }}"> Funding</a></li>
+</ul>
+{% endblock %}
+

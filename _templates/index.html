@@ -1,0 +1,45 @@
+{% extends "!layout.html" %}
+
+{% set customsidebar = 'quicklinks.html' %}
+{% set title = 'Overview' %}
+
+{% block body %}
+
+  <p>The purpose of NIPY is to make it easier to do better brain imaging
+     research.  We believe that neuroscience ideas and analysis ideas
+     develop together.  Good ideas come from understanding; understanding comes
+     from clarity, and clarity must come from well-designed teaching
+     materials and well-designed software.  The software must be designed
+     as a natural extension of the underlying ideas.</p>
+  <p>We aim to build software that is:</p>
+     <ul class="simple">
+     <li>clearly written</li>
+     <li>clearly explained</li>
+
+     <li>a good fit for the underlying ideas</li>
+     <li>a natural home for collaboration</li>
+     </ul>
+  <p>We hope that, if we fail to do this, you will let us know.  We will
+     try and make it better.</p>
+  <p><em>The NIPY team</em></p>
+
+{% endblock %}
+
+{% block extrahead %}
+  <meta name="keywords" content="nipy, neuroimaging, python, neuroscience">
+{% endblock %}
+
+{% block header %}
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+ <a href="{{pathto('index') }}">
+  <img src="{{ pathto("_static/nipy-banner2.png", 1) }}" alt="NIPY logo" />
+</div>
+{% endblock %}
+
+
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
+
+{% block sidebar1 %}{{ sidebar() }}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+
