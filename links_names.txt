@@ -9,6 +9,8 @@
    nipy, NIPY, Nipy, etc...
 
 .. _nipy: http://neuroimaging.scipy.org
+.. _nipype: http://nipy.sourceforge.net/home/nipype
+.. _pbrain: http://projects.scipy.org/neuroimaging/ni/browser/pbrain
 .. _`Brain Imaging Center`: http://bic.berkeley.edu/
 
 .. Documentation tools

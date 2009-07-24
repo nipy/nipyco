@@ -1,11 +1,20 @@
-Members of the neuroimaging in python (NIPY) project are currently developing
-two packages:
+The neuroimaging in python community is involved in several software projects.
 
-  nipy
-    is an environment for the analysis of structural and functional neuroimaging
-    data. It currently has a full system for general linear modeling of functional
-    magnetic resonance imaging (fMRI).
+Active development
+------------------
 
-  nipype
+  nipy_
+
+  is a library of functions for the analysis of structural and functional neuroimaging data.
+
+  nipype_
     is ....
 
+  gava
+
+Not maintained
+--------------
+
+  pbrain_
+
+.. include:: ../../links_names.txt

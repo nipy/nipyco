@@ -233,7 +233,7 @@ div.sphinxsidebar h4, div.sphinxsidebar h3 {
     padding: 0.1em 0 0.1em 0.5em;
     color: white;
     border: 1px solid #86989B;
-    background-color: #919BC9;
+    background-color: #669900;
 }
 
 div.sphinxsidebar ul {
@@ -307,7 +307,7 @@ table td, table th {
 }
 
 div.footer {
-    background-color: #E3EFF1;
+    background-color: #FFFFCE;
     color: #86989B;
     padding: 3px 8px 3px 0;
     clear: both;
@@ -376,7 +376,7 @@ div.warning p.admonition-title {
     color: white;
     border-bottom: 1px solid #86989B;
     font-weight: bold;
-    background-color: #919BC9;
+    background-color: #669900;
 }
 
 div.warning {
