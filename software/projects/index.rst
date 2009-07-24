@@ -1,7 +1,7 @@
 The neuroimaging in python community is involved in several software projects.
 
 Active development
-------------------
+~~~~~~~~~~~~~~~~~~
 
   nipy_
 
@@ -13,7 +13,7 @@ Active development
   gava
 
 Not maintained
---------------
+~~~~~~~~~~~~~~
 
   pbrain_
 

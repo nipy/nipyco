@@ -1,6 +1,6 @@
-============
-NIPY Funding
-============
+=======
+Funding
+=======
 
 .. _desposito-r01:
 

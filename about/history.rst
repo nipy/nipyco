@@ -1,6 +1,6 @@
-===================
- A history of NIPY
-===================
+=======
+History
+=======
 
 Sometime around 2002, Jonthan Taylor started writing BrainSTAT, a
 Python version of Keith Worsley's FmriSTAT package.
