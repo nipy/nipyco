@@ -1,13 +1,11 @@
-.. _developer_site:
+.. _developer_resources:
 
-=================
- Developer Site
-=================
+====================
+ Developer Resources
+====================
 
-.. htmlonly::
-
-   :Release: |version|
-   :Date: |today|
+This site contains the common guidelines and tools, which all NIPY projects
+share.
 
 .. toctree::
    :maxdepth: 2
