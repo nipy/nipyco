@@ -1,3 +1,18 @@
+==================================
+ Welcome to nipy's documentation!
+==================================
+
+
+   :Release: |version|
+   :Date: |today|
+
+   Contents:
+
+.. toctree::
+
+   about/index.rst
+
+
 Members of the neuroimaging in python (NIPY) project are currently developing
 two packages:
 
