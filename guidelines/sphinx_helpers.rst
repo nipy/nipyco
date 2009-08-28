@@ -217,14 +217,14 @@ directive.  All paths are considered relative to the top-level of the
 documentation tree.  To include the source code for the plot in the document,
 pass the ``include-source`` parameter::
 
-  .. plot:: devel/guidelines/elegant.py
+  .. plot:: guidelines/elegant.py
      :include-source:
 
 In the HTML version of the document, the plot includes links to the
 original source code, a high-resolution PNG and a PDF.  In the PDF
 version of the document, the plot is included as a scalable PDF.
 
-.. plot:: devel/guidelines/elegant.py
+.. plot:: guidelines/elegant.py
    :include-source:
 
 Emacs helpers
