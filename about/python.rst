@@ -63,12 +63,12 @@ interactions with their data.
 
 .. [boehm1981]
          Boehm, Barry W. (1981) *Software Engineering Economics*. Englewood
-   Cliffs, NJ: Prentice-Hall.
+         Cliffs, NJ: Prentice-Hall.
 
 .. [Prechelt2000ECS]
          Prechelt, Lutz. 2000. An Empirical Comparison of Seven Programming
-   Languages. *IEEE Computer* 33, 23--29.
+         Languages. *IEEE Computer* 33, 23--29.
 
 .. [Walston1977MPM]
          Walston, C E, and C P Felix. 1977. A Method of Programming
-   Measurement and Estimation. *IBM Syst J* 16, 54-73.
+         Measurement and Estimation. *IBM Syst J* 16, 54-73.
