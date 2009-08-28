@@ -1,30 +1,17 @@
 {% block quicklinks %}
-<h3><a href="{{ pathto('about/index') }}"> About</a></h3>
+<h3><a href="{{ pathto('index') }}"> Community Site</a></h3>
 
 <ul>
+<li><a href="{{ pathto('about/index') }}"> About</a></li>
+<li><a href="http://nipyworld.blogspot.com"> Blog</a></li>
 <li><a href="{{ pathto('about/python') }}"> Python</a></li>
 <li><a href="{{ pathto('about/history') }}"> History</a></li>
 <li><a href="{{ pathto('about/publications/index') }}"> Publications</a></li>
 <li><a href="{{ pathto('about/funding') }}"> Funding</a></li>
-</ul>
-{% endblock %}
-
-{% block community %}
-<h3><a href="{{ pathto('community/index') }}"> Community</a></h3>
-
-<ul>
-<li><a href="http://projects.scipy.org/mailman/listinfo/nipy-devel">Mailing list</a></li>
 <li><a href="{{ pathto('community/sprints/index') }}"> Sprints</a></li>
-</ul>
-{% endblock %}
-
-{% block software %}
-<h3><a href="{{ pathto('software/index') }}"> Software</a></h3>
-
-<ul>
+<li><a href="http://projects.scipy.org/mailman/listinfo/nipy-devel">Mailing list</a></li>
 <li><a href="{{ pathto('software/projects/index') }}"> Projects</a></li>
 <li><a href="{{ pathto('software/license/index') }}"> License</a></li>
 </ul>
 {% endblock %}
-
 
