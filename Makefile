@@ -59,4 +59,4 @@ doctest:
 # for each project admin
 sf_jarrod:
 	@echo "Copying html files to sourceforge..."
-	scp -r _build/html/* jarrodmillman,nipy@web.sourceforge.net:htdocs/home
+	scp -r _build/html/* jarrodmillman,nipy@web.sourceforge.net:htdocs
