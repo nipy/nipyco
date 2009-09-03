@@ -27,6 +27,7 @@ to follow these guidelines ourselves:
    :maxdepth: 2
 
    howto_document
+   documentation_faq
    sphinx_helpers
    testing
    debugging
