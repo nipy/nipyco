@@ -118,10 +118,10 @@ html_style = 'nipy-community.css'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'NIPY community page'
+html_title = 'Community Page'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'Home'
+html_short_title = 'NIPY Community'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
