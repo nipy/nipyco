@@ -55,3 +55,5 @@ We started NIPY because we want to be able to:
   help you organize both.  That way you can more easily keep track of
   your analyses.  We also hope this will make analyses easier to run
   in parallel, and therefore much faster.
+
+You can read more about the project history here: :ref:`history`.

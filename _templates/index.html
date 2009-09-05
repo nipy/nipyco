@@ -1,0 +1,62 @@
+{% extends "!layout.html" %}
+
+{% set customsidebar = 'quicklinks.html' %}
+{% set title = 'Neuroimaging in Python' %}
+
+{% block rootrellink %}
+  <li><a href="{{ pathto('index') }}">Community</a> |&nbsp;</li>
+  <li><a href="http://nipy.sourceforge.net/devel">Develop</a> |&nbsp;</li>
+  <li><a href="http://nipy.sourceforge.net/software/projects">Software</a> |&nbsp;</li>
+  <li><a href="http://projects.scipy.org/mailman/listinfo/nipy-devel">Mailing list</a> |&nbsp;</li>
+  <li><a href="{{ pathto('software/license/index') }}">License</a> |&nbsp;</li>
+{% endblock %}
+
+
+{% block extrahead %}
+  <meta name="keywords" content="nipy, neuroimaging, python, neuroscience">
+{% endblock %}
+
+{% block header %}
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+ <a href="{{pathto('index') }}">
+  <img src="{{ pathto("_static/nipy-community-banner-gy.png", 1) }}" alt="NIPY logo"  border="0" />
+</div>
+{% endblock %}
+
+{% block body %}
+
+  <p>The purpose of NIPY is to make it easier to do better brain imaging
+  research.  We believe that neuroscience ideas and analysis ideas
+  develop together.  Good ideas come from understanding; understanding comes
+  from clarity, and clarity must come from well-designed teaching
+  materials and well-designed software.  The software must be designed
+  as a natural extension of the underlying ideas.</p>
+  <p>We aim to build software that is:</p>
+  <ul class="simple">
+  <li>clearly written</li>
+  <li>clearly explained</li>
+  <li>a good fit for the underlying ideas</li>
+  <li>a natural home for collaboration</li>
+  </ul>
+
+  <h2>Software Projects</h2>
+  <table class="contentstable" align="center" style="margin-left: 30px"><tr>
+    <td width="30%">
+      <p class="biglink"><a class="biglink" href="http://nipy.sourceforge.net/nipy">nipy</a><br/>
+         <span class="linkdescr">analysis</span></p></td>
+    <td width="30%">
+      <p class="biglink"><a class="biglink" href="http://nipy.sourceforge.net/nipype">nipype</a><br/>
+         <span class="linkdescr">pipeline and interfaces</span></p></td>
+    <td width="30%">
+      <p class="biglink"><a class="biglink" href="http://nipy.sourceforge.net/nitime">nitime</a><br/>
+         <span class="linkdescr">timeseries</span></p>
+    </td></tr>
+  </table>
+
+{% endblock %}
+
+
+{% block relbar2 %}{% endblock %}
+
+{% block sidebar1 %}{{ sidebar() }}{% endblock %}
+{% block sidebar2 %}{% endblock %}

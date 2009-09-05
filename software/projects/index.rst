@@ -10,7 +10,7 @@ Active development
   nipype_
     is ....
 
-  gava
+  nitime_
 
 Not maintained
 ~~~~~~~~~~~~~~
