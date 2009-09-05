@@ -69,8 +69,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'TestSphinx'
-copyright = u'2009, Jarrod'
+project = u'NIPY Developer Resources'
+copyright = u'2009, Neuroimaging in Python team.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -191,7 +191,7 @@ html_use_index = False
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'TestSphinxdoc'
+htmlhelp_basename = 'NIPYDevelopersResources.doc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -205,8 +205,8 @@ htmlhelp_basename = 'TestSphinxdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'TestSphinx.tex', u'TestSphinx Documentation',
-   u'Jarrod', 'manual'),
+  ('index', 'NIPYDevelopersResources.tex', u'NIPY Developer\'s Resources',
+   u'Neuroimaging in Python team.', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -216,6 +216,7 @@ latex_documents = [
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
 #latex_use_parts = False
+latex_use_parts = True
 
 # Additional stuff for the LaTeX preamble.
 #latex_preamble = ''

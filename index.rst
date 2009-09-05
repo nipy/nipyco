@@ -4,8 +4,14 @@
  Developer Resources
 ====================
 
-This site contains the common guidelines and tools, which all NIPY projects
-share.
+.. htmlonly::
+
+   :Release: |version|
+   :Date: |today|
+
+   Download `PDF <http://nipy.sourceforge.net/manuals/NIPYDevelopersResources.pdf>`_
+
+   Contents:
 
 .. toctree::
    :maxdepth: 2
