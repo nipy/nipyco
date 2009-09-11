@@ -5,12 +5,17 @@ Active development
 
   nipy_
 
-  is a library of functions for the analysis of structural and functional neuroimaging data.
+      A library of functions for the analysis of structural and
+      functional neuroimaging data.
 
   nipype_
-    is ....
+
+      A Python package for writing fMRI analysis pipelines and
+      interfacing with external analysis packages (SPM, FSL, AFNI).
 
   nitime_
+
+      A Python package for time series analysis.
 
 Not maintained
 ~~~~~~~~~~~~~~
