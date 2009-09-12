@@ -1,0 +1,69 @@
+<style type="text/css">
+  /**
+   * Set a very small font size for the control and constrain
+   * it's width to 225px
+   *
+   * Note: the page has a single FeedControl that
+   * is drawn in the <div> element whose id is "feedControl".
+   */
+  #newsfeed {
+    font-size: 10px;
+    width : 225px;
+  }
+
+  /**
+   * Suppress everything except for title
+   */
+  #newsfeed .gf-snippet,
+  #newsfeed .gf-author,
+  #newsfeed .gf-spacer,
+  #newsfeed .gf-relativePublishedDate {
+    display : none;
+  }
+
+  /**
+   * 1em Padding at the bottom of each collection of entries
+   */
+  #newsfeed .gfc-results {
+    padding-bottom : 1em;
+  }
+
+  /**
+   * no padding between entries
+   */
+  #newsfeed .gfc-result {
+    margin-bottom : 0px;
+  }
+
+  /**
+   * Use a larger font size for section titles
+   */
+  #newsfeed .gfc-resultsHeader .gfc-title {
+    font-size : 110%;
+  }
+</style>
+
+  <script src="http://www.google.com/jsapi?key=notsupplied-wizard"
+    type="text/javascript"></script>
+
+    <script type="text/javascript">
+    /*
+    *  How to use the Feed Control to grab, parse and display feeds.
+    */
+    
+    google.load("feeds", "1");
+    
+    function OnLoad() {
+      // Create a feed control
+      var feedControl = new google.feeds.FeedControl();
+    
+      // Add two feeds.
+      feedControl.addFeed("https://sourceforge.net/export/rss2_projnews.php?group_id=269614", "Community News");
+    
+      // Draw it.
+      feedControl.draw(document.getElementById("newsfeed"));
+    }
+    
+    google.setOnLoadCallback(OnLoad);
+    </script>
+

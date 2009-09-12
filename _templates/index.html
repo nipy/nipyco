@@ -2,6 +2,7 @@
 
 {% set customsidebar = 'quicklinks.html' %}
 {% set title = 'Neuroimaging in Python' %}
+{% include "newsfeed.html" %}
 
 {% block rootrellink %}
   <li><a href="{{ pathto('index') }}">Community</a> |&nbsp;</li>
@@ -25,19 +26,29 @@
 
 {% block body %}
 
-  <p>The purpose of NIPY is to make it easier to do better brain imaging
-  research.  We believe that neuroscience ideas and analysis ideas
-  develop together.  Good ideas come from understanding; understanding comes
-  from clarity, and clarity must come from well-designed teaching
-  materials and well-designed software.  The software must be designed
-  as a natural extension of the underlying ideas.</p>
-  <p>We aim to build software that is:</p>
-  <ul class="simple">
-  <li>clearly written</li>
-  <li>clearly explained</li>
-  <li>a good fit for the underlying ideas</li>
-  <li>a natural home for collaboration</li>
-  </ul>
+  <table class="contentstable"<tr>
+    <td width="60%">
+      <p>The purpose of NIPY is to make it easier to do better brain imaging
+      research.  We believe that neuroscience ideas and analysis ideas
+      develop together.  Good ideas come from understanding; understanding comes
+      from clarity, and clarity must come from well-designed teaching
+      materials and well-designed software.  The software must be designed
+      as a natural extension of the underlying ideas.</p>
+      <p>We aim to build software that is:</p>
+      <ul class="simple">
+      <li>clearly written</li>
+      <li>clearly explained</li>
+      <li>a good fit for the underlying ideas</li>
+      <li>a natural home for collaboration</li>
+      </ul>
+
+    </td><td width="30%" align="left" valign="top">
+
+  <div id="newsfeed">Loading...</div>
+
+    </td></tr>
+  </table>
+
 
   <h2>Software Projects</h2>
   <table class="contentstable" align="center" style="margin-left: 30px"><tr>
