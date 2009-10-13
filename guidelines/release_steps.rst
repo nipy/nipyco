@@ -2,6 +2,11 @@
  Steps for making a release
 ============================
 
+This document will serve as a check-list for each release.  The
+release process should be automated where possible, but some steps
+always require human involvement and inspection.  Please update this
+document if you find missing information during a release.
+
 Bugs and Tickets
 ----------------
 * Are there any remaining tickets on the bug tracker targeted to this
@@ -17,6 +22,13 @@ Build and Install
 * Do all of the subpackages install?  Sometimes we forget to put the
   'config.add_subpackage('package_name')' in the setup.py.
 * Do all tests pass?
+
+Tests
+-----
+* Do all tests pass?  Run tests from top-level directory and include
+  doctests::
+
+  nosetests -v --with-doctest
 
 Documentation
 -------------

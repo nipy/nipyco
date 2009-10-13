@@ -34,5 +34,6 @@ to follow these guidelines ourselves:
    optimization
    open_source_devel
    changelog
+   release_steps
 
 .. include:: ../links_names.txt
