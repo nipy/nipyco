@@ -36,6 +36,14 @@ Documentation
 * Do we have a documentation.zip built?
 * Do the examples and tutorials work?
 
+Create Tag
+----------
+Create the release tag.  In svn the command looks like this::
+
+  svn copy https://nipy.svn.sourceforge.net/svnroot/nipy/nipype/trunk \
+  https://nipy.svn.sourceforge.net/svnroot/nipy/nipype/tags/0.2 \
+  -m "Tagging the 0.2 release of nipype."
+
 Distributions
 -------------
 * Are all files included in the source distribution?  If any are
