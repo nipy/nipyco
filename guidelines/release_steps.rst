@@ -32,6 +32,7 @@ Tests
 
 Documentation
 -------------
+* Update version number of documentation in doc/conf.py
 * Does the documentation build correctly?
 * Do we have a documentation.zip built?
 * Do the examples and tutorials work?
@@ -55,17 +56,46 @@ Distributions
 * Are the installation instructions on the website correct?
 * Build source distribution:
 
-  * ``python setup.py sdist``
-  * nipype has a make target: ``make sdist``
+  * ``make sdist``
 
 * Build egg:
 
-  * ``python setup.py bdist_egg``
-  * nipype has a make target: ``make egg``
+  * ``make egg``
 
 After the release
 -----------------
 * Bump up the version number.  Set release flag (in version.py) to
   False.
 * On the trac site, update the *default milestone* that new tickets
-  are filed as.
+  are filed as.  Under trac > Admin > Ticket System > Milestones.
+
+SourceForge
+-----------
+* Login to sourceforge and make a new documentation directory::
+
+    ssh -t USER,PROJECT@shell.sourceforge.net create
+
+  Once logged in, type ``sf-help`` to get information on directory locations.
+
+* Upload documentation to new directory::
+
+    cd doc
+    #make sf_cburns
+
+  The make target is broken... update it to tarball the built
+  directory and upload that.  Created tarball manually and uploaded with::
+
+    scp nipype-0.2-doc.tar.gz cburns,nipy@web.sourceforge.net:htdocs/nipype/0.2
+
+* Rename documentation.zip to match distributions::
+
+  mv documentation.zip nipype-0.2-docs.zip
+
+* Write and upload release_notes
+
+* Upload distribution files (tarball and eggs), documentation zip, and
+  release notes.  Use SourceForge File Manager for this as I've found
+  no other way.  And update the File Details for the uploaded files.
+
+* Close the Milestone on Trac
+
