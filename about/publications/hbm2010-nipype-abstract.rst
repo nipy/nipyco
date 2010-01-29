@@ -92,10 +92,13 @@ open collaborative development
 international
 
 Graph visualization of pipeline
-Some examples: choose as you please 
-`SPM FreeSurfer pipeline <http://dl.dropbox.com/u/363467/fs_spm_graph.dot.png>`
-`SPM Level1 pipeline <http://dl.dropbox.com/u/363467/spm_graph.dot.png>`
-`SPM detailed level1 pipeline <http://dl.dropbox.com/u/363467/spm_graph_detailed.dot.png>`
+Some examples (choose as you please):
+
+* `SPM FreeSurfer pipeline <http://dl.dropbox.com/u/363467/fs_spm_graph.dot.png>`_
+
+* `SPM Level1 pipeline <http://dl.dropbox.com/u/363467/spm_graph.dot.png>`_
+
+* `SPM detailed level1 pipeline <http://dl.dropbox.com/u/363467/spm_graph_detailed.dot.png>`_
 
 Parallel (ref Fernando)
 
