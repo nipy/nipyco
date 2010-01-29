@@ -61,7 +61,7 @@ Internally, each algorithm in the external package is wrapped in a
 Python class with each algorithm parameter mapped to a class
 attribute.  Researchers can get or set the parameter attributes and
 call a run method to execute the algorithm with the supplied
-parameters.  (See Fig. 1 for an overview of the component architecture)
+parameters.
 
 The pipeline component provides the framework for connecting interface
 nodes to form a complete analysis workflow. The workflow is
@@ -74,30 +74,17 @@ to the algorithms and an md5 hash of the input state. The md5 hash
 which is computed based on contents of files determines if a stage
 needs re-execution or can safely be skipped.
 
-The pipeline mechanism allows one to easily compare ... XXX
-the effects of 
-algorithms or method on a given set of identical inputs and a
-determine the effects of varying individual nodes on the entire workflow, use optimized
-algorithms from different packages in the same workflow and distribute
-the computation across computers.
-
-Graph visualization of pipeline
-Some examples (choose as you please):
-
-* `SPM FreeSurfer pipeline <http://dl.dropbox.com/u/363467/fs_spm_graph.dot.png>`_
-
-* `SPM Level1 pipeline <http://dl.dropbox.com/u/363467/spm_graph.dot.png>`_
-
-* `SPM detailed level1 pipeline <http://dl.dropbox.com/u/363467/spm_graph_detailed.dot.png>`_
-
-Parallel (ref Fernando)
-
+The pipeline mechanism allows one to easily compare algorithms and the
+influence of algorithms on an entire workflow. It allows users to use optimized
+algorithms from different packages in the same workflow and to distribute
+the computation across computers using IPython.
 
 Results
 -------
 
-Used at MIT BErkeley MGH
-DTI?
+Nipype has been in use at UC Berkeley, MGH, MIT and University of
+Washington, Seattle. 
+
 Used on motor tasks, perception, PET, ...
 avoidance of redundant expensive computation, reduces duplication in
 parallel or nearly parallel pipelines
