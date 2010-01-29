@@ -22,14 +22,14 @@ Introduction
 Nipype is a project under the umbrella of Nipy, an effort to develop
 open-source, community-developed neuroimaging tools in Python.  The
 goals of Nipype are two-fold.  First, to provide a uniform interface
-to existing neuroimaging software packages.  Second, is to provide a
+to existing neuroimaging software packages.  Second, to provide a
 pipeline structure which allows for parallel processing, simple
 parameter sweeping, interoperability between packages, reproducible
 analyses, and easy pipeline visualization.
 
 Nipype aims to: (1) encourage the scientific exploration of different
 algorithms and associated parameters; (2) ease the development of
-workflows within and between packages; (3)  reduce the learning
+workflows within and between packages; (3) reduce the learning
 curve associated with understanding the algorithms, APIs and user
 interfaces of disparate packages; and (4) provide a plugin like
 environment for developers to create and test new cross-package
@@ -49,17 +49,17 @@ Methods
 Nipype is an open-source project hosted SourceForge and written in the
 Python programming language, a freely available, high-level language
 that is accessible to both programmers and non-programmers.  Our
-documentation is written in a light-weight markup language,
-Restructured Text, which is then used to generate print-quality HTML
-and PDF documentation using the Sphinx application.  The source code
-is tested using the Nose Python testing framework to ensure
-robustness. Using IPython, Nipype can be used interactively or in a
-distributed computing mode. Nipype is released frequently to provide
-users with prompt bug fixes and feature updates and has a release
-cycle of every two months.
+documentation is written in a light-weight markup language called
+Restructured Text, from which print-quality HTML and PDF documentation
+are generated using the Sphinx Python application.  The source code is
+tested using the Nose Python testing framework to ensure robustness
+and to allow for easier code mainenance. Using IPython, Nipype can be
+used interactively or in a distributed computing mode. Nipype is
+released frequently to provide users with prompt bug fixes and feature
+updates, and has a release cycle of every two months.
 
 The interface component provides access to the individual programs and
-functions from external packages, such as, SPM, FSL, and Freesurfer.
+functions from external packages, such as SPM, FSL, and Freesurfer.
 Internally, each algorithm in the external package is wrapped in a
 Python class with each algorithm parameter mapped to a class
 attribute.  Researchers can get or set the parameter attributes and
