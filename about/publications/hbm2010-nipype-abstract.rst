@@ -79,6 +79,19 @@ influence of algorithms on an entire workflow. It allows users to use optimized
 algorithms from different packages in the same workflow and to distribute
 the computation across computers using IPython.
 
+[NOTE: The above methods section is 2116 characters long. Will need to
+be trimmed.]
+
+Graph visualization of pipeline
+Some examples (choose as you please):
+
+* `SPM FreeSurfer pipeline <http://dl.dropbox.com/u/363467/fs_spm_graph.dot.png>`_
+
+* `SPM Level1 pipeline <http://dl.dropbox.com/u/363467/spm_graph.dot.png>`_
+
+* `SPM detailed level1 pipeline <http://dl.dropbox.com/u/363467/spm_graph_detailed.dot.png>`_
+
+
 Results
 -------
 
@@ -103,21 +116,17 @@ Conclusion
 ----------
 
 Nipype provides an environment for interactive manipulation of data
-through a python interface as well as performing reproducible,
+through a Python interface as well as performing reproducible,
 distributed analysis using the pipeline system and has a growing
 developer and user community. Future plans include adding: interfaces
 to other analysis tools (e.g., Afni, ANTS), a direct interface to the
 NIPy statistical analysis framework, the ability to query data and
 workflows, a repository for workflows (cf. myExperiment.org),
-infrastructure for using Nipype as a teaching tool. 
+and infrastructure for using Nipype as a teaching tool. 
 
-Future plans
-(add afni,  ANTS, direct interface to nipy)
 Good opportunity for comparative validation of tools and algorithms
 Data more sematically annotated (go into detail)
 query on data,
 Web interface
 running on large cluster with Large Scale studies
 instituion wide stnadardized diagnostics
-
-facilitates training
