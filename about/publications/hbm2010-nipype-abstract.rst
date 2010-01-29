@@ -63,24 +63,21 @@ functions from external packages, such as SPM, FSL, and Freesurfer.
 Internally, each algorithm in the external package is wrapped in a
 Python class with each algorithm parameter mapped to a class
 attribute.  Researchers can get or set the parameter attributes and
-call a run method to execute the algorithm with the supplied parameters.
+call a run method to execute the algorithm with the supplied
+parameters.  (See Fig. 1 for an overview of the component architecture)
 
 The pipeline component provides the framework for connecting interface
 nodes to form a complete analysis workflow. The workflow is
 represented in a directed acyclic graph (DAG), enabling efficient use
-of existing scheduling algorithms and ensuring operational
-consistency (see Fig. 1 for an example workflow). 
+of existing scheduling algorithms and ensuring operational consistency
+(see Fig. 2 for an example workflow).  Provenance information is
+stored during each stage of the pipeline, including information about
+the working environment, the parameter values passed to the algorithms
+and the input data files including an md5 hash of the image data.
+This provenance information is checked on re-execution of the pipeline
+to determine which stages of the pipeline need to be executed or can
+safely be skipped.
 
-execution of each node is
-validated before inputs are passed to the next stage.  Provenance
-information is stored during each stage of the pipeline, including
-information about the working environment, the parameter values passed
-to the algorithms and the input data files including an md5 hash of
-the image data.  This provenance information is checked on re-execution
-of the pipeline to determine which stages of the pipeline need to be
-executed or can safely be skipped.
-
-The pipeline allows one to easily compare algorithms [expand on this]
 
 
 Architecture, basic pipeline model
@@ -111,7 +108,9 @@ DTI?
 Used on motor tasks, perception, PET, ...
 avoidance of redundant expensive computation, reduces duplication in
 parallel or nearly parallel pipelines
+
 Encourages exploration of algorithm parameter changes
+The pipeline allows one to easily compare algorithms [expand on this]
 
 
 
