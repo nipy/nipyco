@@ -82,27 +82,35 @@ the computation across computers using IPython.
 Results
 -------
 
-Nipype has been in use at UC Berkeley, MGH, MIT and University of
-Washington, Seattle. 
+Nipype has been in use at UC Berkeley, University of Edinburgh, MGH,
+MIT and University of Washington, Seattle on a wide range of
+projects. These include: 1) large pediatric and psychiatric studies;
+2) MRI, fMRI, DTI and PET studies; and 3) a variety of cognitive and
+experimental paradigms. In all of these cases, the advantage of using
+Nipype has been: a) to work through a single interface on different
+software; b) to avoid redundant expensive computations; 3) to reduce
+duplication of data in workflows; 4) to distribute computational
+load across file-system sharing clusters; 5) to keep track of what has
+been done; and 6) to visualize the workflow.
 
-Used on motor tasks, perception, PET, ...
-avoidance of redundant expensive computation, reduces duplication in
-parallel or nearly parallel pipelines
-
-Encourages exploration of algorithm parameter changes
-The pipeline allows one to easily compare algorithms [expand on this]
-
-
-
-Very reproducible
-easy to keep track of whats been done, and how
-
+Furthermore, integrating interfaces to FSL and FreeSurfer allows SPM
+workflows to leverage different volume- and surface-based structural
+analysis components and provides a mechanism for integrating MRI, fMRI
+and DTI data within a single workflow.
 
 
 Conclusion
 ----------
 
-Growing developer community
+Nipype provides an environment for interactive manipulation of data
+through a python interface as well as performing reproducible,
+distributed analysis using the pipeline system and has a growing
+developer and user community. Future plans include adding: interfaces
+to other analysis tools (e.g., Afni, ANTS), a direct interface to the
+NIPy statistical analysis framework, the ability to query data and
+workflows, a repository for workflows (cf. myExperiment.org),
+infrastructure for using Nipype as a teaching tool. 
+
 Future plans
 (add afni,  ANTS, direct interface to nipy)
 Good opportunity for comparative validation of tools and algorithms
