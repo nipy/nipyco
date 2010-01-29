@@ -31,16 +31,12 @@ Nipype aims to: (1) encourage the scientific exploration of different
 algorithms and associated parameters; (2) ease the development of
 workflows within and between packages; (3) reduce the learning
 curve associated with understanding the algorithms, APIs and user
-interfaces of disparate packages; and (4) provide a plugin like
+interfaces of disparate packages; (4) provide a plugin like
 environment for developers to create and test new cross-package
-algorithms. 
-
-limitations of existing pipelines, and
-LONI pipeline and fiswidgets
-(CDB: I don't think we should specifically name LONI and FISWidgets.
-These tools have a lot of functionality we don't have.)
-
-Problem of application specific pipelines
+algorithms; and (5) provide a collaborative environment for
+neuroimaging software development in a high-level language. These aims
+address some limitations of existing neuroimaging pipeline
+systems (e.g., LONIPipeline, CaMBA, MIPAV, BioImageSuite). 
 
 
 Methods
@@ -56,7 +52,8 @@ tested using the Nose Python testing framework to ensure robustness
 and to allow for easier code mainenance. Using IPython, Nipype can be
 used interactively or in a distributed computing mode. Nipype is
 released frequently to provide users with prompt bug fixes and feature
-updates, and has a release cycle of every two months.
+updates, and has a release cycle of every two months. Figure 1 shows
+the component architecture of nipype.
 
 The interface component provides access to the individual programs and
 functions from external packages, such as SPM, FSL, and Freesurfer.
@@ -69,24 +66,20 @@ parameters.  (See Fig. 1 for an overview of the component architecture)
 The pipeline component provides the framework for connecting interface
 nodes to form a complete analysis workflow. The workflow is
 represented in a directed acyclic graph (DAG), enabling efficient use
-of existing scheduling algorithms and ensuring operational consistency
-(see Fig. 2 for an example workflow).  Provenance information is
-stored during each stage of the pipeline, including information about
-the working environment, the parameter values passed to the algorithms
-and the input data files including an md5 hash of the image data.
-This provenance information is checked on re-execution of the pipeline
-to determine which stages of the pipeline need to be executed or can
-safely be skipped.
+of existing scheduling algorithms and ensuring operational
+consistency (see Fig. 2 for an example workflow). Provenance
+information is stored during each stage of the pipeline, including
+information about the working environment, the parameter values passed
+to the algorithms and an md5 hash of the input state. The md5 hash
+which is computed based on contents of files determines if a stage
+needs re-execution or can safely be skipped.
 
-
-
-Architecture, basic pipeline model
-compenent architecture diagram
-interfaces
-why python
-infrastructure (hosting, docs, releases, trac, testing)
-open collaborative development
-international
+The pipeline mechanism allows one to easily compare ... XXX
+the effects of 
+algorithms or method on a given set of identical inputs and a
+determine the effects of varying individual nodes on the entire workflow, use optimized
+algorithms from different packages in the same workflow and distribute
+the computation across computers.
 
 Graph visualization of pipeline
 Some examples (choose as you please):
