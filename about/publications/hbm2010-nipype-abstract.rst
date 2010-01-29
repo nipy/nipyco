@@ -1,9 +1,9 @@
 Possible titles
 ---------------
 
-* Reproduciable Brain Imaging Results with Nipype
+* Reproducible Brain Imaging Results with Nipype
 * Why should I use Nipype to run my spm or fsl analysis?
-* Nipye to run spm or FSL analysis
+* Nipype to run spm or FSL analysis
 
 Authors
 -------
@@ -27,12 +27,13 @@ pipeline structure which allows for parallel processing, simple
 parameter sweeping, interoperability between packages, reproducible
 analyses, and easy pipeline visualization.
 
-Nipype aims to encourages the scientific exploration of different
-algorithms and associated parameters, ease the development of
-pipelines within and between packages.  And to reduce the learning
+Nipype aims to: (1) encourage the scientific exploration of different
+algorithms and associated parameters; (2) ease the development of
+workflows within and between packages; (3)  reduce the learning
 curve associated with understanding the algorithms, APIs and user
-interfaces of disparate packages.
-
+interfaces of disparate packages; and (4) provide a plugin like
+environment for developers to create and test new cross-package
+algorithms. 
 
 limitations of existing pipelines, and
 LONI pipeline and fiswidgets
@@ -52,21 +53,25 @@ documentation is written in a light-weight markup language,
 Restructured Text, which is then used to generate print-quality HTML
 and PDF documentation using the Sphinx application.  The source code
 is tested using the Nose Python testing framework to ensure
-robustness.  The software is released frequently to provide users with
-prompt bug fixes and feature updates and have a release cycle of every
-two months.
+robustness. Using IPython, Nipype can be used interactively or in a
+distributed computing mode. Nipype is released frequently to provide
+users with prompt bug fixes and feature updates and has a release
+cycle of every two months.
 
-The interface component provides access to the individual algorithms
-from the external packages SPM, FSL, and Freesurfer.  Internally, each
-algorithm in the external package is wrapped in a Python class with
-each algorthim parameter mapped to a class attribute.  Researchers can
-get or set the parameter attributes and call a run method to execute
-the algorthim with the supplied parameters.
+The interface component provides access to the individual programs and
+functions from external packages, such as, SPM, FSL, and Freesurfer.
+Internally, each algorithm in the external package is wrapped in a
+Python class with each algorithm parameter mapped to a class
+attribute.  Researchers can get or set the parameter attributes and
+call a run method to execute the algorithm with the supplied parameters.
 
 The pipeline component provides the framework for connecting interface
-nodes to form a complete analysis graph.  A Direct Acyclic Graph (DAG)
-is used to manage the pipeline and ensure operational order.  At each
-stage of pipeline, execution of the output of each node is
+nodes to form a complete analysis workflow. The workflow is
+represented in a directed acyclic graph (DAG), enabling efficient use
+of existing scheduling algorithms and ensuring operational
+consistency (see Fig. 1 for an example workflow). 
+
+execution of each node is
 validated before inputs are passed to the next stage.  Provenance
 information is stored during each stage of the pipeline, including
 information about the working environment, the parameter values passed
