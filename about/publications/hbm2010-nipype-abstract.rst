@@ -19,11 +19,26 @@ Authors
 Introduction
 ------------
 
-What is Nipy, what is Nipype?
-What is it like to do an analysis ideosycratic apis
-Expert user to use different apis
+Nipype is a project under the umbrella of Nipy, an effort to develop
+open-source, community-developed neuroimaging tools in Python.  The
+goals of Nipype are two-fold.  First, to provide a uniform interface
+to existing neuroimaging software packages.  Second, is to provide a
+pipeline structure which allows for parallel processing, simple
+parameter sweeping, interoperability between packages, reproducible
+analyses, and easy pipeline visualization.
+
+Nipype aims to encourages the scientific exploration of different
+algorithms and associated parameters, ease the development of
+pipelines within and between packages.  And to reduce the learning
+curve associated with understanding the algorithms, APIs and user
+interfaces of disparate packages.
+
+
 limitations of existing pipelines, and
 LONI pipeline and fiswidgets
+(CDB: I don't think we should specifically name LONI and FISWidgets.
+These tools have a lot of functionality we don't have.)
+
 Problem of application specific pipelines
 
 
