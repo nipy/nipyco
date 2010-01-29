@@ -45,6 +45,39 @@ Problem of application specific pipelines
 Methods
 -------
 
+Nipype is an open-source project hosted SourceForge and written in the
+Python programming language, a freely available, high-level language
+that is accessible to both programmers and non-programmers.  Our
+documentation is written in a light-weight markup language,
+Restructured Text, which is then used to generate print-quality HTML
+and PDF documentation using the Sphinx application.  The source code
+is tested using the Nose Python testing framework to ensure
+robustness.  The software is released frequently to provide users with
+prompt bug fixes and feature updates and have a release cycle of every
+two months.
+
+The interface component provides access to the individual algorithms
+from the external packages SPM, FSL, and Freesurfer.  Internally, each
+algorithm in the external package is wrapped in a Python class with
+each algorthim parameter mapped to a class attribute.  Researchers can
+get or set the parameter attributes and call a run method to execute
+the algorthim with the supplied parameters.
+
+The pipeline component provides the framework for connecting interface
+nodes to form a complete analysis graph.  A Direct Acyclic Graph (DAG)
+is used to manage the pipeline and ensure operational order.  At each
+stage of pipeline, execution of the output of each node is
+validated before inputs are passed to the next stage.  Provenance
+information is stored during each stage of the pipeline, including
+information about the working environment, the parameter values passed
+to the algorithms and the input data files including an md5 hash of
+the image data.  This provenance information is checked on re-execution
+of the pipeline to determine which stages of the pipeline need to be
+executed or can safely be skipped.
+
+The pipeline allows one to easily compare algorithms [expand on this]
+
+
 Architecture, basic pipeline model
 compenent architecture diagram
 interfaces
