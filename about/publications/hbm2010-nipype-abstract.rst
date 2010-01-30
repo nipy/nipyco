@@ -36,7 +36,7 @@ environment for developers to create and test new cross-package
 algorithms; and (5) provide a collaborative environment for
 neuroimaging software development in a high-level language. These aims
 address some limitations of existing neuroimaging pipeline
-systems (e.g., LONIPipeline, CaMBA, MIPAV, BioImageSuite). 
+systems (e.g., LONIPipeline, CaMBA, MIPAV, BioImageSuite).
 
 
 Methods
@@ -49,7 +49,7 @@ documentation is written in a light-weight markup language called
 Restructured Text, from which print-quality HTML and PDF documentation
 are generated using the Sphinx Python application.  The source code is
 tested using the Nose Python testing framework to ensure robustness
-and to allow for easier code mainenance. Using IPython, Nipype can be
+and to allow for easier code maintenance. Using IPython, Nipype can be
 used interactively or in a distributed computing mode. Nipype is
 released frequently to provide users with prompt bug fixes and feature
 updates, and has a release cycle of every two months. Figure 1 shows
@@ -96,7 +96,7 @@ Results
 -------
 
 Nipype has been in use at UC Berkeley, University of Edinburgh, MGH,
-MIT and University of Washington, Seattle on a wide range of
+MIT, and University of Washington, Seattle on a wide range of
 projects. These include: 1) large pediatric and psychiatric studies;
 2) MRI, fMRI, DTI and PET studies; and 3) a variety of cognitive and
 experimental paradigms. In all of these cases, the advantage of using
