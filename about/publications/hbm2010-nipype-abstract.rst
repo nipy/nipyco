@@ -61,7 +61,10 @@ Internally, each algorithm in the external package is wrapped in a
 Python class with each algorithm parameter mapped to a class
 attribute.  Researchers can get or set the parameter attributes and
 call a run method to execute the algorithm with the supplied
-parameters.
+parameters. Our architecture provides access to individual processing steps
+interactively from a python prompt - and these interface objects can be created
+in the context of a pipeline, or in a standalone manner. This aids in learning
+about new tools and developing new pipelines.
 
 The pipeline component provides the framework for connecting interface
 nodes to form a complete analysis workflow. The workflow is
