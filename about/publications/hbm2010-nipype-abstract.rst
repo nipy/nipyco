@@ -19,6 +19,28 @@ Authors
 Introduction
 ------------
 
+.. note::
+
+   I think introduction needs to choose a single aspect where NiPype would
+   blossom and stand out -- that should make the message easier to digest.
+
+   Why not to start introduction with pointing to already existing
+   prevalence of free and/or open-source software in brain imaging
+   research and pointing the problem which that creates: heterogeneous
+   collection of specialized applications without a transparent
+   ***interoperability***.
+
+   Such interoperability aspect could be fixed at two levels: uniform
+   *interface* to all of them AND facility to unite them all in a
+   single processing *pipeline*... so then current beginning fits, and
+   just needs rehearsal of *interoperability* aspect as the goal -- I
+   think that would make the underlying reason for having NiPy more
+   obvious.
+
+   Then "Nipype aims" should not be presented as a list of goals but
+   more of list of requirements NiPype is addressing to reach the
+   target "interoperability".
+
 Nipype is a project under the umbrella of Nipy, an effort to develop
 open-source, community-developed neuroimaging tools in Python.  The
 goals of Nipype are two-fold.  First, to provide a uniform interface
@@ -41,6 +63,11 @@ systems (e.g., LONIPipeline, CaMBA, MIPAV, BioImageSuite).
 
 Methods
 -------
+
+.. note::
+   I think first paragraph is more about tools and should go after
+   interface/pipeline description, especially since a reader just got
+   familiar with those two aspects recently in introduction ;-)
 
 Nipype is an open-source project hosted SourceForge and written in the
 Python programming language, a freely available, high-level language
