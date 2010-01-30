@@ -13,52 +13,30 @@ Authors
 * Dav Clark
 * Cindee Madison
 * Rosalia Tungaraza
+* Yaroslav Halchenko
 * K. Jarrod Millman
 
 
 Introduction
 ------------
 
-.. note::
+Current neuroimaging software offer users an incredible opportunity to
+analyze their data in different ways, with different underlying
+assumptions. However, this also leads to a creation of a heteregenous
+collection of specialized applications without transparent
+interoperability or a uniform operating interface. Nipype, a project
+under the umbrella of Nipy, is an open-source, community-developed
+project that aims to solve these issues by providing a uniform
+interface to existing neuroimaging software and by facilitating
+interaction between these packages within a single workflow. 
 
-   I think introduction needs to choose a single aspect where NiPype would
-   blossom and stand out -- that should make the message easier to digest.
-
-   Why not to start introduction with pointing to already existing
-   prevalence of free and/or open-source software in brain imaging
-   research and pointing the problem which that creates: heterogeneous
-   collection of specialized applications without a transparent
-   ***interoperability***.
-
-   Such interoperability aspect could be fixed at two levels: uniform
-   *interface* to all of them AND facility to unite them all in a
-   single processing *pipeline*... so then current beginning fits, and
-   just needs rehearsal of *interoperability* aspect as the goal -- I
-   think that would make the underlying reason for having NiPy more
-   obvious.
-
-   Then "Nipype aims" should not be presented as a list of goals but
-   more of list of requirements NiPype is addressing to reach the
-   target "interoperability".
-
-Nipype is a project under the umbrella of Nipy, an effort to develop
-open-source, community-developed neuroimaging tools in Python.  The
-goals of Nipype are two-fold.  First, to provide a uniform interface
-to existing neuroimaging software packages.  Second, to provide a
-pipeline structure which allows for parallel processing, simple
-parameter sweeping, interoperability between packages, reproducible
-analyses, and easy pipeline visualization.
-
-Nipype aims to: (1) encourage the scientific exploration of different
-algorithms and associated parameters; (2) ease the development of
-workflows within and between packages; (3) reduce the learning
-curve associated with understanding the algorithms, APIs and user
-interfaces of disparate packages; (4) provide a plugin like
-environment for developers to create and test new cross-package
-algorithms; and (5) provide a collaborative environment for
-neuroimaging software development in a high-level language. These aims
-address some limitations of existing neuroimaging pipeline
-systems (e.g., LONIPipeline, CaMBA, MIPAV, BioImageSuite).
+To achieve these aims, Nipype needs to provide an environment that
+encourages interactive exploration of different algorithms from
+different packages (e.g., SPM, FSL), eases development of workflows
+within and between packages, reduces the learning curve, while
+creating a collaborative platform for neuroimaging software
+development in a high-level language and addressing limitations of
+existing pipeline systems.
 
 
 Methods
@@ -76,11 +54,11 @@ documentation is written in a light-weight markup language called
 Restructured Text, from which print-quality HTML and PDF documentation
 are generated using the Sphinx Python application.  The source code is
 tested using the Nose Python testing framework to ensure robustness
-and to allow for easier code maintenance. Using IPython, Nipype can be
-used interactively or in a distributed computing mode. Nipype is
-released frequently to provide users with prompt bug fixes and feature
-updates, and has a release cycle of every two months. Figure 1 shows
-the component architecture of nipype.
+and to allow for easier code maintenance. Nipype is released
+frequently to provide users with prompt bug fixes and feature updates,
+and has a release cycle of every two months. Figure 1 shows the
+component architecture of nipype. Nipype can be used interactively
+from a python prompt as well as an interaction-free workflow mode.
 
 The interface component provides access to the individual programs and
 functions from external packages, such as SPM, FSL, and Freesurfer.
@@ -140,6 +118,24 @@ Furthermore, integrating interfaces to FSL and FreeSurfer allows SPM
 workflows to leverage different volume- and surface-based structural
 analysis components and provides a mechanism for integrating MRI, fMRI
 and DTI data within a single workflow.
+
+
+encourage the scientific exploration of different
+algorithms and associated parameters; (2) ease the development of
+workflows within and between packages; (3) reduce the learning
+curve associated with understanding the algorithms, APIs and user
+interfaces of disparate packages; (4) provide a plugin like
+environment for developers to create and test new cross-package
+algorithms; and (5) provide a collaborative environment for
+neuroimaging software development in a high-level language. These aims
+address some limitations of existing neuroimaging pipeline
+systems (e.g., LONIPipeline, CaMBA, MIPAV, BioImageSuite).
+
+
+  Second, to provide a
+pipeline structure which allows for parallel processing, simple
+parameter sweeping, interoperability between packages, reproducible
+analyses, and easy pipeline visualization.
 
 
 Conclusion
