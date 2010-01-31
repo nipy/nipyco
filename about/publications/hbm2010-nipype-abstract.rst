@@ -78,7 +78,7 @@ Nipype is available on SourceForge (http://nipy.sf.net/nipype) and is
 written in Python, a free high-level language accessible to both
 programmers and non-programmers with extensive scientific computation
 capabilities. Nipype is documented using a light-weight markup
-language called RestructuredText, from which print-quality HTML and
+language called reStructuredText, from which print-quality HTML and
 PDF documentation are generated.
 The source code is tested using the Nose Python testing
 framework to ensure robustness and to allow for easier code
