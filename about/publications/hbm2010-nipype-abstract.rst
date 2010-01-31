@@ -2,8 +2,8 @@ Possible titles
 ---------------
 
 * Reproducible Brain Imaging Results with Nipype
-* Why should I use Nipype to run my spm or fsl analysis?
-* Nipype to run spm or FSL analysis
+* Why should I use Nipype to run my SPM or FSL analysis?
+* Nipype to run SPM or FSL analysis
 * Nipype: a platform for uniform interaction across neuroimaging
   software
 
@@ -55,7 +55,7 @@ The Nipype architecture (Fig. 1) consists of a set of interfaces and a
 pipeline framework that provide uniform access to and interoperability
 between external software packages.
 
-The interfaces encapsulate functional components (e.g., bet, realign)
+The interfaces encapsulate functional components (e.g., brain extraction, realignment)
 from external packages (e.g., FSL, SPM) and provide a uniform access
 mechanism to these components. Users can introspect individual
 algorithms, query and set their parameters, and execute, retrieve and
@@ -64,7 +64,7 @@ framework provides the mechanism to connect interfaces to form a
 complete analysis workflow and execute it. The workflow is represented
 in a directed acyclic graph (DAG), enabling orderly execution and
 ensuring operational consistency (see Fig. 2 for an example
-workflow). 
+workflow).
 
 The pipeline component enables distributed processing (on multicores,
 clusters, and clouds), allows parameter sweeping across workflows,
@@ -74,13 +74,13 @@ pipeline engine executes only nodes whose input parameters and/or data
 files have changed from the previous run, eliminating redundant
 execution.
 
-Nipype is available on Sourceforge (http://nipy.sf.net/nipype) and is
-written in Python a free, high-level language accessible to both
+Nipype is available on SourceForge (http://nipy.sf.net/nipype) and is
+written in Python, a free high-level language accessible to both
 programmers and non-programmers with extensive scientific computation
 capabilities. Nipype is documented using a light-weight markup
-language called Restructured Text, from which print-quality HTML and
-PDF documentation are generated using the Sphinx Python
-application. The source code is tested using the Nose Python testing
+language called RestructuredText, from which print-quality HTML and
+PDF documentation are generated.
+The source code is tested using the Nose Python testing
 framework to ensure robustness and to allow for easier code
 maintenance. Nipype is released frequently to provide users with
 prompt bug fixes and feature updates, and is available as part of
@@ -99,17 +99,17 @@ MIT, and University of Washington, Seattle on a wide range of
 projects. These include: 1) large pediatric and psychiatric studies;
 2) MRI, fMRI, DTI and PET studies; and 3) a variety of cognitive and
 experimental paradigms. In all of these cases, the advantages of using
-Nipype have been: a) to work through a single interface on different
-software; b) to avoid redundant expensive computations; 3) to reduce
-duplication of data in workflows; 4) to distribute computational
-load across file-system sharing clusters; 5) to keep track of the
-exact parameters and components of the analyses; and 6) to visualize
-the workflows. 
+Nipype have been: a) use of different software through a single
+interface; b) avoidance of redundant expensive computations; 3)
+reduction of duplication of data in workflows; 4) distribution of computational
+load across file-system sharing clusters; 5) protocolization of the
+exact parameters and components of the analyses; and 6) visualization of
+the workflows.
 
 The ability to interact with external programs from a single Python
 prompt aids in learning about new tools and developing new
 workflows. The pipeline mechanism allows easy comparisons of
-algorithms and the influence of algorithms on an entire workflow. It
+algorithms and their influence on an entire workflow. It
 allows researchers to use optimized algorithms from different packages
 in the same workflow. As an example, integrating interfaces to FSL and
 FreeSurfer allows SPM workflows to leverage different volume- and
@@ -132,16 +132,16 @@ Conclusion
 ----------
 
 Nipype provides an environment for interactive manipulation of data
-through a Python interface as well as performing reproducible,
+through a Python interface as well as for performing reproducible,
 distributed analysis using the pipeline system and has a growing
 developer and user community. Nipype has encouraged the scientific
 exploration of different algorithms and associated parameters, eased
 the development of workflows within and between packages and reduced
 the learning curve associated with understanding the algorithms, APIs
 and user interfaces of disparate packages. Future plans include
-adding: interfaces to other analysis tools (e.g., Afni, ANTS, Slicer),
+adding: interfaces to other analysis tools (e.g., AFNI, ANTS, Slicer),
 a direct interface to the Nipy statistical analysis framework, the
 ability to query data and workflows, a repository for workflows
 (cf. myExperiment.org), and infrastructure for using Nipype as a
-teaching tool.   
+teaching tool.
 
