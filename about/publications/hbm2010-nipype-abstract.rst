@@ -102,27 +102,26 @@ load across file-system sharing clusters; 5) to keep track of the
 exact parameters and components of the analyses; and 6) to visualize
 the workflows. 
 
-The ability to interact with external programs from a single python
+The ability to interact with external programs from a single Python
 prompt aids in learning about new tools and developing new
 workflows. The pipeline mechanism allows easy comparisons of
-algorithms and the influence of algorithms on an entire workflow. It 
-allows users to use optimized algorithms from different packages
+algorithms and the influence of algorithms on an entire workflow. It
+allows researchers to use optimized algorithms from different packages
 in the same workflow. As an example, integrating interfaces to FSL and
 FreeSurfer allows SPM workflows to leverage different volume- and
 surface-based structural analysis components (e.g., Fig 2). The
 workflow in Figure 2 combines surface-based smoothing with an
 SPM-based first-level analysis. The resultant contrast images were
 then used for a FreeSurfer-based group-analysis using surface-based
-spherical registration. Nipype provides a mechanism for integrating
-MRI, fMRI and DTI data within a single workflow. 
+spherical registration.
 
-It provides a plugin like environment for developers to create and
+Nipype provides a plugin-like environment for developers to create and
 test new cross-package algorithms and a collaborative environment for
-neuroimaging software development in a high-level
-language. For example, ArtifactDetect, a quality assurance tool
-maintained as a matlab-based SPM toolbox, is now available to FSL
-users and appropriately modifies both SPM and FSL generated design
-matrices to discard outliers.
+neuroimaging software development in a high-level language. For
+example, ArtifactDetect, a quality assurance tool maintained as a
+Matlab-based SPM toolbox, is now available to FSL users and
+appropriately modifies both SPM and FSL generated design matrices to
+discard outliers.
 
 
 Conclusion
