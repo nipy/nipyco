@@ -69,19 +69,19 @@ visualization of workflows. When a workflow is re-analyzed, the
 pipeline engine executes only nodes whose input parameters or contents
 of input files have changed. This eliminates redundant execution.
 
-Nipype is an Python-based open-source project
-(http://nipy.sf.net/nipype). Python is a freely-available, high-level
-language accessible to both programmers and non-programmers and has
-extensive scientific computation capabilities. Nipype is documented
-using a light-weight markup language called Restructured Text, from
-which print-quality HTML and PDF documentation are generated using the
-Sphinx Python application. The source code is tested using the Nose
-Python testing framework to ensure robustness and to allow for easier
-code maintenance. Nipype is released frequently to provide users with 
-prompt bug fixes and feature updates, has a release cycle of two
-months and is available as part of NeuroDebian
-(http://www.neurodebian.org) and therefore as part of any Debian
-derivatives (e.g., Ubuntu).
+Nipype is available on Sourceforge (http://nipy.sf.net/nipype). It is
+written in Python because of its free-availability, high-level
+language features accessible to both programmers and non-programmers
+and extensive scientific computation capabilities. Nipype is
+documented using a light-weight markup language called Restructured
+Text, from which print-quality HTML and PDF documentation are
+generated using the Sphinx Python application. The source code is
+tested using the Nose Python testing framework to ensure robustness
+and to allow for easier code maintenance. Nipype is released
+frequently to provide users with prompt bug fixes and feature updates,
+has a release cycle of two months and is available as part of
+NeuroDebian (http://www.neurodebian.org) and as part of any Debian
+derivatives (e.g., Ubuntu). 
 
 
 * Fig 2: `SPM FreeSurfer pipeline <http://dl.dropbox.com/u/363467/fs_spm_graph.dot.png>`_
@@ -119,10 +119,10 @@ MRI, fMRI and DTI data within a single workflow.
 It provides a plugin like environment for developers to create and
 test new cross-package algorithms and a collaborative environment for
 neuroimaging software development in a high-level
-language. ArtifactDetect, a quality assurance tool, originally a
-matlab-based SPM toolbox is now available to FSL users and
-appropriately modifies both SPM and FSL generated design matrices to
-discard outliers. 
+language. For example, ArtifactDetect, a quality assurance tool
+maintained as a matlab-based SPM toolbox, is now available to FSL
+users and appropriately modifies both SPM and FSL generated design
+matrices to discard outliers.
 
 
 Conclusion
