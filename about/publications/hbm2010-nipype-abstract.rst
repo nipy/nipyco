@@ -14,11 +14,15 @@ Authors
 * Satrajit S. Ghosh, Ph.D., Research Laboratory of Electronics, Massachusetts
   Institute of Technology, Cambridge, MA, USA (satra at mit.edu) - no
   conflict of interest
-* Chris Burns
+* Christopher D. Burns, Helen Wills Neuroscience Institute, University
+  of California, Berkeley, CA, USA
 * Dav Clark
+* Krzysztof Gorgolewski, School of Informatics, University of
+  Edinburgh, UK
+* Yaroslav O. Halchenko, Dartmouth College, NH, USA
 * Cindee Madison
-* Rosalia Tungaraza
-* Yaroslav Halchenko
+* Rosalia F. Tungaraza, Ph.D, Integrated Brain Imaging Center,
+  University of Washington, Seattle, WA, USA
 * K. Jarrod Millman
 
 
