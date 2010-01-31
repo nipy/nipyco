@@ -33,15 +33,15 @@ uniform operating interface. Nipype, a project under the umbrella of
 Nipy, is an open-source, community-developed project that aims to
 solve these issues by providing a uniform interface to existing
 neuroimaging software and by facilitating interaction between these
-packages within a single workflow.  
+packages within a single workflow.
 
-To achieve these aims, Nipype provides a Python-based environment
-that encourages interactive exploration of different algorithms from 
-different packages (e.g., SPM, FSL), eases development of workflows
-within and between packages, reduces the learning curve, while
-creating a collaborative platform for neuroimaging software
-development in a high-level language and addressing limitations of
-existing pipeline systems.
+To achieve these aims, Nipype provides a Python-based environment that
+encourages interactive exploration of algorithms from different
+packages (e.g., SPM, FSL), eases the design of workflows within and
+between packages, and reduces the learning curve necessary to use a
+variety of packages.  Nipype is creating a collaborative
+platform for neuroimaging software development in a high-level
+language and addressing limitations of existing pipeline systems.
 
 
 Methods
@@ -54,8 +54,8 @@ between external software packages.
 The interfaces encapsulate functional components (e.g., bet, realign)
 from external packages (e.g., FSL, SPM) and provide a uniform access
 mechanism to these components. Users can introspect individual
-algorithms, query and set their inputs, and execute, retrieve and
-visualize outputs interactively from a python prompt. The pipeline
+algorithms, query and set their parameters, and execute, retrieve and
+visualize outputs interactively from a Python prompt. The pipeline
 framework provides the mechanism to connect interfaces to form a
 complete analysis workflow and execute it. The workflow is represented
 in a directed acyclic graph (DAG), enabling orderly execution and
@@ -66,22 +66,22 @@ The pipeline component enables distributed processing (on multicores,
 clusters, and clouds), allows parameter sweeping across workflows,
 provides interoperability between packages, and easy re-analysis and
 visualization of workflows. When a workflow is re-analyzed, the
-pipeline engine executes only nodes whose input parameters or contents
-of input files have changed. This eliminates redundant execution.
+pipeline engine executes only nodes whose input parameters and/or data
+files have changed from the previous run, eliminating redundant
+execution.
 
-Nipype is available on Sourceforge (http://nipy.sf.net/nipype). It is
-written in Python because of its free-availability, high-level
-language features accessible to both programmers and non-programmers
-and extensive scientific computation capabilities. Nipype is
-documented using a light-weight markup language called Restructured
-Text, from which print-quality HTML and PDF documentation are
-generated using the Sphinx Python application. The source code is
-tested using the Nose Python testing framework to ensure robustness
-and to allow for easier code maintenance. Nipype is released
-frequently to provide users with prompt bug fixes and feature updates,
-has a release cycle of two months and is available as part of
+Nipype is available on Sourceforge (http://nipy.sf.net/nipype) and is
+written in Python a free, high-level language accessible to both
+programmers and non-programmers with extensive scientific computation
+capabilities. Nipype is documented using a light-weight markup
+language called Restructured Text, from which print-quality HTML and
+PDF documentation are generated using the Sphinx Python
+application. The source code is tested using the Nose Python testing
+framework to ensure robustness and to allow for easier code
+maintenance. Nipype is released frequently to provide users with
+prompt bug fixes and feature updates, and is available as part of
 NeuroDebian (http://www.neurodebian.org) and as part of any Debian
-derivatives (e.g., Ubuntu). 
+derivatives (e.g., Ubuntu).
 
 
 * Fig 2: `SPM FreeSurfer pipeline <http://dl.dropbox.com/u/363467/fs_spm_graph.dot.png>`_
