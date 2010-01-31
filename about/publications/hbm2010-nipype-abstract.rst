@@ -33,7 +33,7 @@ Current neuroimaging software offer users an incredible opportunity to
 analyze their data in different ways, with different underlying
 assumptions. However, this has resulted in a heterogeneous collection
 of specialized applications without transparent interoperability or a
-uniform operating interface. Nipype, a project under the umbrella of
+uniform operating interface. Nipype, an initiative under the umbrella of
 Nipy, is an open-source, community-developed project that aims to
 solve these issues by providing a uniform interface to existing
 neuroimaging software and by facilitating interaction between these
@@ -119,9 +119,8 @@ SPM-based first-level analysis. The resultant contrast images were
 then used for a FreeSurfer-based group-analysis using surface-based
 spherical registration.
 
-Nipype provides a plugin-like environment for developers to create and
-test new cross-package algorithms and a collaborative environment for
-neuroimaging software development in a high-level language. For
+Nipype provides a plugin-like, high-level language environment for developers to create and
+test new cross-package algorithms. For
 example, ArtifactDetect, a quality assurance tool maintained as a
 Matlab-based SPM toolbox, is now available to FSL users and
 appropriately modifies both SPM and FSL generated design matrices to
