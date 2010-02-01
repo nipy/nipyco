@@ -87,7 +87,7 @@ PDF documentation are generated.
 The source code is tested using the Nose Python testing
 framework to ensure robustness and to allow for easier code
 maintenance. Nipype is released frequently to provide users with
-prompt bug fixes and feature updates, and is available as part of
+prompt bug fixes and feature updates, and is also available as part of
 NeuroDebian (http://www.neurodebian.org) and as part of any Debian
 derivatives (e.g., Ubuntu).
 
