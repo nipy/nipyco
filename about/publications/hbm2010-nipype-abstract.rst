@@ -9,8 +9,9 @@ Possible titles
 
 Title
 -----
-Nipype: an opensource platform for unified and reproducible interaction using existing neuroimaging software
+Nipype: Opensource platform for unified and replicable interaction with existing neuroimaging tools
 
+ 
 
 Authors
 -------
