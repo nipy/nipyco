@@ -7,6 +7,10 @@ Possible titles
 * Nipype: a platform for uniform interaction across neuroimaging
   software
 
+Title
+-----
+Nipype: an opensource platform for unified and reproducible interaction using existing neuroimaging software
+
 
 Authors
 -------
@@ -33,19 +37,19 @@ Current neuroimaging software offer users an incredible opportunity to
 analyze their data in different ways, with different underlying
 assumptions. However, this has resulted in a heterogeneous collection
 of specialized applications without transparent interoperability or a
-uniform operating interface. Nipype, an initiative under the umbrella of
-Nipy, is an open-source, community-developed project that aims to
-solve these issues by providing a uniform interface to existing
-neuroimaging software and by facilitating interaction between these
-packages within a single workflow.
+uniform operating interface. Nipype, an open-source,
+community-developed initiative under the umbrella of Nipy, is a Python
+project that solves these issues by providing a uniform interface to
+existing neuroimaging software and by facilitating interaction between
+these packages within a single workflow. 
 
-To achieve these aims, Nipype provides a Python-based environment that
-encourages interactive exploration of algorithms from different
-packages (e.g., SPM, FSL), eases the design of workflows within and
-between packages, and reduces the learning curve necessary to use a
-variety of packages.  Nipype is creating a collaborative
-platform for neuroimaging software development in a high-level
-language and addressing limitations of existing pipeline systems.
+Nipype provides an environment that encourages interactive exploration
+of algorithms from different packages (e.g., SPM, FSL), eases the
+design of workflows within and between packages, and reduces the
+learning curve necessary to use different packages.  Nipype is
+creating a collaborative platform for neuroimaging software
+development in a high-level language and addressing limitations of
+existing pipeline systems.
 
 
 Methods
@@ -95,37 +99,39 @@ Results
 -------
 
 Nipype has been in use at UC Berkeley, University of Edinburgh, MGH,
-MIT, and University of Washington, Seattle on a wide range of
-projects. These include: 1) large pediatric and psychiatric studies;
-2) MRI, fMRI, DTI and PET studies; and 3) a variety of cognitive and
-experimental paradigms. In all of these cases, the advantages of using
-Nipype have been: a) use of different software through a single
-interface; b) avoidance of redundant expensive computations; 3)
-reduction of duplication of data in workflows; 4) distribution of computational
-load across file-system sharing clusters; 5) protocolization of the
-exact parameters and components of the analyses; and 6) visualization of
-the workflows.
+MIT, and UW Seattle on a wide range of projects. These include: 1)
+large pediatric and psychiatric studies; 2) MRI, fMRI, DTI and PET
+studies; and 3) a variety of cognitive and experimental paradigms. In
+all of these cases, the advantages of using Nipype have been: a) use
+of different software through a single interface; b) avoidance of
+redundant expensive computations; c) reduction of duplication of data
+in workflows; d) distribution of computational load across file-system
+sharing clusters; e) tracking of exact parameters and components of
+the analyses; and f) visualization of the workflows.
 
 The ability to interact with external programs from a single Python
 prompt aids in learning about new tools and developing new
 workflows. The pipeline mechanism allows easy comparisons of
 algorithms and their influence on an entire workflow. It
 allows researchers to use optimized algorithms from different packages
-in the same workflow. As an example, integrating interfaces to FSL and
-FreeSurfer allows SPM workflows to leverage different volume- and
-surface-based structural analysis components (e.g., Fig 2). The
-workflow in Figure 2 combines surface-based smoothing with an
-SPM-based first-level analysis. The resultant contrast images were
-then used for a FreeSurfer-based group-analysis using surface-based
-spherical registration.
+in the same workflow. Unlike existing pipeline systems, Nipype
+supports both SPM or non-SPM workflows within the same architecture.
 
-Nipype provides a plugin-like, high-level language environment for developers to create and
-test new cross-package algorithms. For
-example, ArtifactDetect, a quality assurance tool maintained as a
-Matlab-based SPM toolbox, is now available to FSL users and
-appropriately modifies both SPM and FSL generated design matrices to
-discard outliers.
+By integrating interfaces to FSL and FreeSurfer, Nipype enables SPM
+workflows to leverage different volume- and surface-based structural
+analysis components (e.g., Fig 2). The workflow in Fig. 2 combines
+surface-based smoothing with an SPM-based first-level analysis. The
+resultant contrast images were then used for a FreeSurfer-based
+group-analysis using surface-based spherical registration.
 
+A key benefit to using Nipype over other pipeline systems is that
+developers can create and test algorithms with a high-level language
+environment and enable researchers to use the algorithms without being
+restricted to specific packages. For example, ArtifactDetect, an fMRI
+diagnostics tool maintained as a Matlab-based SPM toolbox, is
+now available as a Nipype plugin to FSL users and appropriately
+modifies both SPM and FSL generated design matrices to discard
+outliers.
 
 Conclusion
 ----------
