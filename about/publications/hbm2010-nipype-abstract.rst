@@ -9,9 +9,10 @@ Possible titles
 
 Title
 -----
-Nipype: Opensource platform for unified and replicable interaction with existing neuroimaging tools
 
- 
+Nipype: Opensource platform for unified and replicable interaction
+with existing neuroimaging tools
+
 
 Authors
 -------
@@ -50,10 +51,10 @@ these packages within a single workflow.
 Nipype provides an environment that encourages interactive exploration
 of algorithms from different packages (e.g., SPM, FSL), eases the
 design of workflows within and between packages, and reduces the
-learning curve necessary to use different packages.  Nipype is
-creating a collaborative platform for neuroimaging software
-development in a high-level language and addressing limitations of
-existing pipeline systems.
+learning curve necessary to use different packages. Nipype is creating
+a collaborative platform for neuroimaging software development in a
+high-level language and addressing limitations of existing pipeline
+systems.
 
 
 Methods
@@ -63,16 +64,16 @@ The Nipype architecture (Fig. 1) consists of a set of interfaces and a
 pipeline framework that provide uniform access to and interoperability
 between external software packages.
 
-The interfaces encapsulate functional components (e.g., brain extraction, realignment)
-from external packages (e.g., FSL, SPM) and provide a uniform access
-mechanism to these components. Users can introspect individual
-algorithms, query and set their parameters, and execute, retrieve and
-visualize outputs interactively from a Python prompt. The pipeline
-framework provides the mechanism to connect interfaces to form a
-complete analysis workflow and execute it. The workflow is represented
-in a directed acyclic graph (DAG), enabling orderly execution and
-ensuring operational consistency (see Fig. 2 for an example
-workflow).
+The interfaces encapsulate functional components (e.g., brain
+extraction, realignment) from external packages (e.g., FSL, SPM) and
+provide a uniform access mechanism to these components. Users can
+introspect individual algorithms, query and set their parameters, and
+execute, retrieve and visualize outputs interactively from a Python
+prompt. The pipeline framework provides the mechanism to connect
+interfaces to form a complete analysis workflow and execute it. The
+workflow is represented in a directed acyclic graph (DAG), enabling
+orderly execution and ensuring operational consistency (see Fig. 2 for
+an example workflow).
 
 The pipeline component enables distributed processing (on multicores,
 clusters, and clouds), allows parameter sweeping across workflows,
@@ -87,16 +88,16 @@ written in Python, a free high-level language accessible to both
 programmers and non-programmers with extensive scientific computation
 capabilities. Nipype is documented using a light-weight markup
 language called reStructuredText, from which print-quality HTML and
-PDF documentation are generated.
-The source code is tested using the Nose Python testing
-framework to ensure robustness and to allow for easier code
-maintenance. Nipype is released frequently to provide users with
-prompt bug fixes and feature updates, and is also available as part of
-NeuroDebian (http://www.neurodebian.org) and as part of any Debian
-derivatives (e.g., Ubuntu).
+PDF documentation are generated.  The source code is tested using the
+Nose Python testing framework to ensure robustness and to allow for
+easier code maintenance. Nipype is released frequently to provide
+users with prompt bug fixes and feature updates, and is also available
+as part of NeuroDebian (http://neuro.debian.net) and as part of any
+Debian derivatives (e.g., Ubuntu).
 
 
-* Fig 2: `SPM FreeSurfer pipeline <http://dl.dropbox.com/u/363467/fs_spm_graph.dot.png>`_
+* Fig 2: `SPM FreeSurfer pipeline
+  <http://dl.dropbox.com/u/363467/fs_spm_graph.dot.png>`_
 
 
 Results
