@@ -21,14 +21,17 @@ Authors
   conflict of interest
 * Christopher D. Burns, Helen Wills Neuroscience Institute, University
   of California, Berkeley, CA, USA
-* Dav Clark
+* Dav Clark,  Helen Wills Neuroscience Institute, University
+  of California, Berkeley, CA, USA
 * Krzysztof Gorgolewski, Neuroinformatics Doctoral Training Centre, 
   School of Informatics, University of Edinburgh, Edinburgh, United Kingdom 
 * Yaroslav O. Halchenko, Dartmouth College, NH, USA
-* Cindee Madison
+* Cindee Madison, Helen Wills Neuroscience Institute, University
+  of California, Berkeley, CA, USA
 * Rosalia F. Tungaraza, Ph.D, Integrated Brain Imaging Center,
   University of Washington, Seattle, WA, USA
-* K. Jarrod Millman
+* K. Jarrod Millman,  Helen Wills Neuroscience Institute, University
+  of California, Berkeley, CA, USA
 
 
 Introduction
