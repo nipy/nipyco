@@ -109,13 +109,13 @@ in workflows; d) distribution of computational load across file-system
 sharing clusters; e) tracking of exact parameters and components of
 the analyses; and f) visualization of the workflows.
 
-The ability to interact with external programs from a single Python
-prompt aids in learning about new tools and developing new
+The ability to interact with external programs from a single
+Python-prompt aids in learning about new tools and developing new 
 workflows. The pipeline mechanism allows easy comparisons of
 algorithms and their influence on an entire workflow. It
 allows researchers to use optimized algorithms from different packages
 in the same workflow. Unlike existing pipeline systems, Nipype
-supports both SPM or non-SPM workflows within the same architecture.
+supports both SPM and non-SPM workflows within the same architecture.
 
 By integrating interfaces to FSL and FreeSurfer, Nipype enables SPM
 workflows to leverage different volume- and surface-based structural
