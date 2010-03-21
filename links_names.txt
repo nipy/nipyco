@@ -11,6 +11,9 @@
 .. _nipy: http://nipy.sourceforge.net/nipy
 .. _nipype: http://nipy.sourceforge.net/nipype
 .. _nitime: http://nipy.sourceforge.net/nitime
+.. _nibabel: http://nipy.sourceforge.net/nibabel
+.. _dipy: http://nipy.sourceforge.net/dipy
+
 .. _pbrain: http://projects.scipy.org/neuroimaging/ni/browser/pbrain
 .. _`Brain Imaging Center`: http://bic.berkeley.edu/
 

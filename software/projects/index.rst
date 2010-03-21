@@ -17,6 +17,14 @@ Active development
 
       A Python package for time series analysis.
 
+  nibabel_
+
+      A package for reading and writing common neuroimaging file formats.
+
+  dipy_
+
+      Diffusion imaging analysis in Python.  
+
 Not maintained
 ~~~~~~~~~~~~~~
 

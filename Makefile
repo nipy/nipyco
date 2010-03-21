@@ -60,3 +60,7 @@ doctest:
 sf_jarrod:
 	@echo "Copying html files to sourceforge..."
 	scp -r _build/html/* jarrodmillman,nipy@web.sourceforge.net:htdocs
+
+sf_matthew: html
+	@echo "Copying html files to sourceforge..."
+	scp -r _build/html/* matthewbrett,nipy@web.sourceforge.net:htdocs
