@@ -2,7 +2,8 @@
 
 {% set customsidebar = 'quicklinks.html' %}
 {% set title = 'Neuroimaging in Python' %}
-{% include "newsfeed.html" %}
+<!-- disable newsfeed as it is not being maintained -->
+<!-- {% include "newsfeed.html" %} -->
 
 {% block rootrellink %}
   <li><a href="{{ pathto('index') }}">Community</a> |&nbsp;</li>
@@ -44,7 +45,8 @@
 
     </td><td width="30%" align="left" valign="top">
 
-  <div id="newsfeed">Loading...</div>
+    <!-- disable newsfeed as it is not being maintained -->
+    <!--  <div id="newsfeed">Loading...</div> -->
 
     </td></tr>
   </table>
@@ -64,12 +66,15 @@
          <span class="linkdescr">timeseries</span></p></td>
     </tr>
     <tr>
-    <td width="50%">
+    <td width="30%">
       <p class="biglink"><a class="biglink" href="http://nipy.sourceforge.net/nibabel">nibabel</a><br/>
          <span class="linkdescr">file i/o</span></p></td>
-    <td width="50%">
+    <td width="30%">
       <p class="biglink"><a class="biglink" href="http://nipy.sourceforge.net/dipy">dipy</a><br/>
          <span class="linkdescr">diffusion imaging</span></p></td>
+    <td width="30%">
+      <p class="biglink"><a class="biglink" href="http://github.com/nipy/pbrain">pbrain</a><br/>
+         <span class="linkdescr">EEG and ECoG</span></p></td>
     </tr>
   </table>
 

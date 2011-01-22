@@ -1,3 +1,9 @@
+.. _projects:
+
+########
+Projects
+########
+
 The neuroimaging in python community is involved in several software projects.
 
 Active development
@@ -10,12 +16,12 @@ Active development
 
   nipype_
 
-      A Python package for writing fMRI analysis pipelines and
-      interfacing with external analysis packages (SPM, FSL, AFNI).
+      A package for writing fMRI analysis pipelines and interfacing with
+      external analysis packages (SPM, FSL, AFNI).
 
   nitime_
 
-      A Python package for time series analysis.
+      A package for time series analysis.
 
   nibabel_
 
@@ -23,11 +29,8 @@ Active development
 
   dipy_
 
-      Diffusion imaging analysis in Python.  
-
-Not maintained
-~~~~~~~~~~~~~~
+      Diffusion imaging analysis.
 
   pbrain_
 
-.. include:: ../../links_names.txt
+      EEG and ECoG analysis.

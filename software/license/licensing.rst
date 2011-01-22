@@ -80,6 +80,3 @@ See also these links (from the presentation):
 So far this might suggest that the NIH would prefer at least a
 BSD-like license, but the NIH has supported several GPL'd projects in
 imaging, :term:`AFNI` being the most obvious example.
-
-
-.. include:: ../../links_names.txt

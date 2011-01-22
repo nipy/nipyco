@@ -1,5 +1,7 @@
 # Makefile for Sphinx documentation
 #
+HTML_DIR=_build/html
+SF_USER ?= jarrodmillman
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
@@ -54,13 +56,12 @@ doctest:
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in _build/doctest/output.txt."
 
-# Sourceforge doesn't appear to have a way of copying the files
-# without specifying a username.  So we'll probably have one target
-# for each project admin
-sf_jarrod:
-	@echo "Copying html files to sourceforge..."
-	scp -r _build/html/* jarrodmillman,nipy@web.sourceforge.net:htdocs
+# This one udates for the specific user named at the top of the makefile
+upload-htmldoc: htmldoc upload-htmldoc-$(SF_USER)
 
-sf_matthew: html
+# This updates for the user named in the target, e.g.
+# make upload-htmldoc-matthewbrett
+upload-htmldoc-%: html
 	@echo "Copying html files to sourceforge..."
-	scp -r _build/html/* matthewbrett,nipy@web.sourceforge.net:htdocs
+	rsync -rzhvp --chmod=Dg+s,g+rw $(HTML_DIR)/* \
+		$*,nipy@web.sourceforge.net:/home/groups/n/ni/nipy/htdocs/

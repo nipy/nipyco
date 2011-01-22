@@ -17,7 +17,7 @@
       Berkeley software distribution license. The BSD_ license is
       permissive, in that it allows you to modify and use the code
       without requiring that you use the same license.  It allows
-      you to distribute closed-source binaries.  
+      you to distribute closed-source binaries.
 
    BOLD
       Contrast that is blood oxygen level dependent.  When a brain
@@ -79,7 +79,7 @@
       is free for academic use, and open-source, but not free for
       commercial use.
 
-   GPL 
+   GPL
       The GPL_ is the GNU general public license.  It is one of the
       most commonly-used open-source sofware licenses.  The
       distinctive feature of the GPL license is that it requires that
@@ -122,7 +122,7 @@
       determine orthogonal components across multiple sources (or
       sensors).  See :term:`ICA` and the `wikipedia PCA`_ page.
 
-   PET 
+   PET
       Positron emission tomography is a nethod of detecting the
       spatial distributions of certain radiolabeled compounds -
       usually in the brain.  The scanner detectors pick up the spatial
@@ -149,7 +149,7 @@
        voxel.  The :term:`SPM software` package implements this
        approach - as do several others, including :term:`FSL` and
        :term:`AFNI`.
-      
+
    SPM software
        SPM_ (statistical parametric mapping) is the name of the
        matlab_ based package written by John Ashburner, Karl Friston
@@ -168,7 +168,7 @@
       software for lesion-symptom analysis, and has a parallel
       scripting engine.  VoxBo has a :term:`GPL` license. Dan Kimberg
       leads development.
- 
+
    voxel
       Voxels are volumetric pixels - that is, they are values in a
       regular grid in three dimensional space - see
@@ -184,5 +184,3 @@
       brain has an intensity that is influenced by blood flow.  This
       use has been almost completely replaced by the less invasive
       :term:`BOLD` :term:`FMRI` technique.
-
-.. include:: links_names.txt

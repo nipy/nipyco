@@ -72,5 +72,3 @@ Conclusions
 
 BrainPy is an open-source environment for the analysis and
 visualization of neuroimaging data built on top of python.
-
-.. include:: ../../links_names.txt

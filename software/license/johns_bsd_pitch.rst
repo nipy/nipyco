@@ -116,5 +116,3 @@ So I encourage you to release your code under a BSD compatible
 license, and when you encounter an open source developer whose code
 you want to use, to do the same.  Feel free to forward this document
 on them.
-
-.. include:: ../../links_names.txt

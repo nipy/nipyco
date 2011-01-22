@@ -1,3 +1,5 @@
+.. _mission:
+
 The purpose of NIPY is to make it easier to do better brain imaging
 research.  We believe that neuroscience ideas and analysis ideas
 develop together.  Good ideas come from understanding; understanding comes
