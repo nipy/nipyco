@@ -36,16 +36,19 @@ For more options, type::
 Viewing the documentation
 -------------------------
 
-We also build our website using sphinx_.  All of the documentation in
-the ``docs`` directory is included on the website.  There are a few
-files that are website only and these are placed in the ``www``
-directory.  The easiest way to view the documentation while editing
-is to build the website and open the local build in your browser::
+We build the root part of the website using sphinx_::
 
-  make web
+    git co http://github.com/nipy/nipyco.git
+    cd nipyco
+    make html
 
-Then open ``www/build/html/index.html`` in your browser.
+then open ``_build/html/index.html`` in your browser to preview the docs.
 
+I (Matthew) then use::
+
+    make upload-html-matthewbrett
+
+to upload the docs to sourceforge.
 
 Syntax
 ------

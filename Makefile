@@ -56,12 +56,15 @@ doctest:
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in _build/doctest/output.txt."
 
+# To clean up html directory, maybe
+# http://sourceforge.net/apps/trac/sourceforge/wiki/SSH%20Client
+
 # This one udates for the specific user named at the top of the makefile
-upload-htmldoc: htmldoc upload-htmldoc-$(SF_USER)
+upload-html: upload-htmldoc-$(SF_USER)
 
 # This updates for the user named in the target, e.g.
 # make upload-htmldoc-matthewbrett
-upload-htmldoc-%: html
+upload-html-%: html
 	@echo "Copying html files to sourceforge..."
 	rsync -rzhvp --chmod=Dg+s,g+rw $(HTML_DIR)/* \
 		$*,nipy@web.sourceforge.net:/home/groups/n/ni/nipy/htdocs/
