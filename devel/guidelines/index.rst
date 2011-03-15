@@ -4,11 +4,6 @@
  Development Guidelines
 ========================
 
-.. htmlonly::
-
-   :Release: |version|
-   :Date: |today|
-
 We have adopted many developer guidelines in an effort to make
 development easy, and the source code readable, consistent and robust.
 Many of our guidelines are adopted from the scipy_ / numpy_ community.
@@ -31,9 +26,8 @@ to follow these guidelines ourselves:
    sphinx_helpers
    testing
    debugging
+   properties
    optimization
    open_source_devel
    changelog
    release_steps
-
-.. include:: ../links_names.txt

@@ -16,3 +16,9 @@ analysis and visualization of human brain data.” Meeting of the
 Organization for Human Brain Mapping, 2005. See the 
 :ref:`BrainPy HBM abstract <brainpy-hbm-abstract>`.
 
+.. toctree::
+    :hidden:
+
+    brainpy_abstract
+    hbm2010-nipype-abstract
+

@@ -194,4 +194,3 @@ Not really python specific, but a rather nice set of windows for
 browsing code directories, and code - see the ECB_ page.  Again, your
 package manager may help you (``apt-get install ecb``).
 
-.. include:: ../links_names.txt

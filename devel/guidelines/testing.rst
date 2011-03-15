@@ -176,4 +176,3 @@ For details on all the command line options::
 
 .. include:: ./coverage_testing.rst
 
-.. include:: ../links_names.txt

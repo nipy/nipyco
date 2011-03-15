@@ -46,5 +46,3 @@ instrospection, add::
 See
 `embedding ipython <http://ipython.scipy.org/doc/manual/html/interactive/reference.html#embedding-ipython>`_ 
 for more detail.
-
-.. include:: ../links_names.txt

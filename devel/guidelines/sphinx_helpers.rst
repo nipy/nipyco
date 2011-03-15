@@ -68,11 +68,11 @@ mechanism for referencing another reST document or a subsection in any
 document, including within a document are identical. Place a
 *reference label* above the section heading, like this::
 
-	.. _sphinx_helpers:
+    .. _sphinx_helpers:
 
-	====================
-	 Sphinx Cheat Sheet
-	====================
+    ====================
+    Sphinx Cheat Sheet
+    ====================
 
 Note the blank line between the *reference label* and the section
 heading is important!
@@ -113,20 +113,18 @@ using the `reST reference
 <http://docutils.sourceforge.net/docs/user/rst/quickref.html#hyperlink-targets>`_
 syntax::
 
-	.. _targetname: http://www.external_website.org
+    .. _targetname: http://www.external_website.org
 
 To refer to the reference in a separate reST file, include the
 ``links_names.txt`` file and refer to the link through it's target
 name.  For example, put this include at the bottom of your reST
 document::
-     
+
      .. include:: ../links_names.txt
 
 and refer to the hyperlink target::
 
     blah blah blah targetname_ more blah
-
-
 
 Links to classes, modules and functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -156,8 +154,8 @@ syntax highlighting on ipython sessions
       antialiased or aa: [True | False]
       ...snip
 
-This support is included in this template, but will also be included
-in a future version of Pygments by default.
+We include the source with most of the nipy sub-projects as
+``doc/sphinxext/ipython_console_highlighting``.
 
 .. _formatting_text:
 
@@ -217,35 +215,20 @@ directive.  All paths are considered relative to the top-level of the
 documentation tree.  To include the source code for the plot in the document,
 pass the ``include-source`` parameter::
 
-  .. plot:: guidelines/elegant.py
+  .. plot:: devel/guidelines/elegant.py
      :include-source:
 
 In the HTML version of the document, the plot includes links to the
 original source code, a high-resolution PNG and a PDF.  In the PDF
 version of the document, the plot is included as a scalable PDF.
 
-.. plot:: guidelines/elegant.py
+.. plot:: devel/guidelines/elegant.py
    :include-source:
 
 Emacs helpers
 -------------
 
 See :ref:`rst_emacs`
-
-Inheritance diagrams
---------------------
-
-Inheritance diagrams can be inserted directly into the document by
-providing a list of class or module names to the
-``inheritance-diagram`` directive.
-
-For example::
-
-  .. inheritance-diagram:: codecs
-
-produces:
-
-.. inheritance-diagram:: codecs
 
 .. _sphinx_literal:
 

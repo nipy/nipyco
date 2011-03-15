@@ -26,9 +26,12 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
+import matplotlib.sphinxext
 extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.doctest',
-              'sphinx.ext.intersphinx',
+              'matplotlib.sphinxext.plot_directive',
+              'matplotlib.sphinxext.only_directives',
+              'matplotlib.sphinxext.ipython_console_highlighting',
               'sphinx.ext.todo',
               'sphinx.ext.pngmath']
 

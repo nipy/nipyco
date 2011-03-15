@@ -74,5 +74,3 @@ Sneeze is included in the ``tools`` directory in the nipy_
 source. Simply run the ``setup.py`` to install sneeze in your local
 bin directory.
 
-
-.. include:: ../links_names.txt

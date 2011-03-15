@@ -83,5 +83,3 @@ Documentation Problems
 
 See our :ref:`documentation_faq` if you are having problems building
 or writing the documentation.
-
-.. include:: ../links_names.txt

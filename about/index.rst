@@ -57,3 +57,13 @@ We started NIPY because we want to be able to:
   in parallel, and therefore much faster.
 
 You can read more about the project history here: :ref:`history`.
+
+.. We need the following toctree directive to include the documentation
+.. in the document hierarchy - see http://sphinx.pocoo.org/concepts.html
+.. toctree::
+   :hidden:
+
+   history
+   funding
+   python
+   publications/index

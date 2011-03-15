@@ -38,8 +38,6 @@ Tim Hochberg, from the Numpy list::
     3. Ask for help
     4. Recode in C.
     5. Accept that your code will never be fast.
-   
+
     Step zero should probably be repeated after every other step ;)
 
-
-.. include:: ../links_names.txt

@@ -4,15 +4,6 @@
  Developer Resources
 ====================
 
-.. htmlonly::
-
-   :Release: |version|
-   :Date: |today|
-
-   Download `PDF <http://nipy.sourceforge.net/manuals/NIPYDevelopersResources.pdf>`_
-
-   Contents:
-
 .. toctree::
    :maxdepth: 2
 

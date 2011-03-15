@@ -13,3 +13,13 @@ We aim to build software that is:
 * clearly explained
 * a good fit for the underlying ideas
 * a natural home for collaboration
+
+.. We need the following toctree directive to include the documentation
+.. in the document hierarchy - see http://sphinx.pocoo.org/concepts.html
+.. toctree::
+   :hidden:
+
+   devel/index
+   community/index
+   software/index
+   about/index

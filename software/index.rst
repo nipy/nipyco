@@ -4,3 +4,8 @@
  NIPY Software
 ==============
 
+.. toctree::
+
+    license/index
+    projects/index
+
