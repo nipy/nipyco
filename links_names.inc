@@ -8,12 +8,12 @@
    __not_case_sensitive__, so only one target definition is needed for
    nipy, NIPY, Nipy, etc...
 
-.. _nipy: http://nipy.sourceforge.net/nipy
-.. _nipype: http://nipy.sourceforge.net/nipype
-.. _nitime: http://nipy.sourceforge.net/nitime
-.. _nibabel: http://nipy.sourceforge.net/nibabel
-.. _dipy: http://nipy.sourceforge.net/dipy
-.. _pbrain: http://nipy.sourceforge.net/pbrain
+.. _nipy: http://nipy.org/nipy
+.. _nipype: http://nipy.org/nipype
+.. _nitime: http://nipy.org/nitime
+.. _nibabel: http://nipy.org/nibabel
+.. _dipy: http://nipy.org/dipy
+.. _pbrain: http://nipy.org/pbrain
 .. _`Brain Imaging Center`: http://bic.berkeley.edu/
 
 .. Documentation tools
